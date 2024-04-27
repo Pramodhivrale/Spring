@@ -1,0 +1,49 @@
+package com.main;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.entiry.EntityClass;
+
+public class MainClass 
+{
+	public static void main(String[] args) {
+		AnnotationConfigApplicationContext config=new AnnotationConfigApplicationContext();
+		config.scan("com.*");
+		config.refresh();
+		
+		
+		EntityClass e=new EntityClass();
+		e.setUserId(3);
+		e.setUserName("mahadev");
+		e.setOrderAmount(1000.0);
+		
+		EntityClass e1=new EntityClass();
+		e1.setUserId(4);
+		e1.setUserName("Prahsant");
+		e1.setOrderAmount(5050.0);
+		
+		EntityClass e2=new EntityClass();
+		e2.setUserId(5);
+		e2.setUserName("sonam bajwa");
+		e2.setOrderAmount(8979.0);
+		
+		EntityClass e4=new EntityClass();
+		e4.setUserId(6);
+		e4.setUserName("Kajal");
+		e4.setOrderAmount(5656.0);
+		
+		
+		
+		
+		Dboperation bean = config.getBean(Dboperation.class);
+		
+		//bean.deletData(e);
+		
+		bean.addData(e);
+		
+		//bean.deletAlldata();
+		
+		
+	}
+
+}

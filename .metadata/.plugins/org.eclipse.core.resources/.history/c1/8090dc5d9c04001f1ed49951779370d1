@@ -1,0 +1,24 @@
+package com.configuration;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+
+import jakarta.activation.DataSource;
+
+@Configuration
+public class FlipkartJpaConfiguration 
+{
+	@Bean
+	public DataSource getDataSource()
+	{
+		DriverManagerDataSource datasource=new DriverManagerDataSource();
+		datasource.setUrl("jdbc:mysql://localhost:3306/springbatch");
+		datasource.setUsername("root");
+		datasource.setPassword("Pramod#12");
+		
+		return (DataSource) datasource;
+	}
+	
+
+}

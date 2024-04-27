@@ -1,0 +1,29 @@
+package com.main;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.entiry.EntityClass;
+
+public class MainClass 
+{
+	public static void main(String[] args) {
+		AnnotationConfigApplicationContext config=new AnnotationConfigApplicationContext();
+		config.scan("com.*");
+		config.refresh();
+		
+		
+		EntityClass e=new EntityClass();
+		e.setUserId(1);
+//		e.setUserName("pramod");
+//		e.setOrderAmount(1000.0);
+		
+		
+		
+		Dboperation bean = config.getBean(Dboperation.class);
+		bean.deletData(e);
+		//bean.addData(e);
+		
+		
+	}
+
+}

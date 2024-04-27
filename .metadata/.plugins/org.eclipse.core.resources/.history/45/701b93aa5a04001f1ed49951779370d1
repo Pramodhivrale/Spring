@@ -1,0 +1,13 @@
+package com.data;
+
+public class Student {
+
+	private String StudentName;
+	private int StudentId;
+	private String Gender;
+	
+	public Student()
+	{
+		System.out.println("Student object created");
+	}
+}

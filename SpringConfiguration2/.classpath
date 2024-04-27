@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/Spring By Delip Sir/Spring 8PM-20231121T030406Z-001/Spring 8PM/spring-framework-5.3.9/spring-framework-5.3.9/libs/spring-aop-5.3.9.jar"/>
+	<classpathentry kind="lib" path="D:/Spring By Delip Sir/Spring 8PM-20231121T030406Z-001/Spring 8PM/spring-framework-5.3.9/spring-framework-5.3.9/libs/spring-beans-5.3.9.jar"/>
+	<classpathentry kind="lib" path="D:/Spring By Delip Sir/Spring 8PM-20231121T030406Z-001/Spring 8PM/spring-framework-5.3.9/spring-framework-5.3.9/libs/spring-context-5.3.9.jar"/>
+	<classpathentry kind="lib" path="D:/Spring By Delip Sir/Spring 8PM-20231121T030406Z-001/Spring 8PM/spring-framework-5.3.9/spring-framework-5.3.9/libs/spring-core-5.3.9.jar"/>
+	<classpathentry kind="lib" path="D:/Spring By Delip Sir/Spring 8PM-20231121T030406Z-001/Spring 8PM/spring-framework-5.3.9/spring-framework-5.3.9/libs/spring-expression-5.3.9.jar"/>
+	<classpathentry kind="lib" path="D:/Spring By Delip Sir/Spring 8PM-20231121T030406Z-001/Spring 8PM/spring-framework-5.3.9/spring-framework-5.3.9/libs/spring-jcl-5.3.9.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

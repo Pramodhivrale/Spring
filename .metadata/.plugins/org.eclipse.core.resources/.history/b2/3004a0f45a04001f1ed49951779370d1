@@ -1,0 +1,13 @@
+package com.data;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class ConfigClass {
+
+	public Student student1() 
+	{
+		return new Student();
+		
+	}
+}

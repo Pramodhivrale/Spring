@@ -1,0 +1,19 @@
+package com.main;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.entiry.EntityClass;
+import com.jpa.JpaRepo;
+
+public class Dboperation 
+{
+	@Autowired
+	private JpaRepo jpaRepo;
+	
+	public void addData(EntityClass entityClass)
+	{
+		jpaRepo.save(entityClass);
+		System.out.println("Data Added succesfully...");
+	}
+
+}

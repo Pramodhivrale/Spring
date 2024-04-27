@@ -1,0 +1,10 @@
+package jpa;
+
+import org.springframework.data.repository.CrudRepository;
+
+import entity.EntityClass;
+
+public interface JpaRepo extends CrudRepository<EntityClasss, Integer>
+{
+ 
+}

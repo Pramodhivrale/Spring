@@ -1,0 +1,12 @@
+package com.jpa;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.entiry.EntityClass;
+@Repository
+public interface JpaRepo extends CrudRepository<EntityClass, Integer>
+{
+ 
+	EntityClass findByorderAmount(double d);
+}
